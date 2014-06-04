@@ -1,0 +1,33 @@
+//   Author:   Tadhg Coffey
+//   Date  :   5/19/14
+//   Homework assignment : Quiz 2
+//   File: contacts.txt from Send Birthday Greeting
+//   Objective : Read (2) text files: One with a birthday greeting 
+//             and the second containing the user's contacts with 
+//             birthday dates. Contacts are placed in a table.When 
+//             current date matches a date in the contacts table, 
+//             the user will be alerted and can choose to send a 
+//             birthday greeting to the contact.
+//****************************************************************
+
+
+John Murphy
+jmurphy@gmail.com
+415-111-2222
+05/20/1977
+Sarah Conner
+sconner@gmail.com
+415-222-3333
+05/19/1952
+Tom Brady
+tbrady@gmail.com
+555-456-7896
+05/21/1969
+Alex Smith
+asmith@gmail.com
+895-458-7412
+12/08/1986
+Paul Ryan
+pryan@gmail.com
+222-563-2145
+02/05/1980

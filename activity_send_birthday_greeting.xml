@@ -1,0 +1,144 @@
+<!-- Author:   Tadhg Coffey
+//   Date  :   5/19/14
+//   Homework assignment : Quiz 2
+//   File: activity_send_birthday_greeting.xml 
+//              from Send Birthday Greeting
+//   Objective : Read (2) text files: One with a birthday greeting 
+//             and the second containing the user's contacts with 
+//             birthday dates. Contacts are placed in a table.When 
+//             current date matches a date in the contacts table, 
+//             the user will be alerted and can choose to send a 
+//             birthday greeting to the contact.
+//****************************************************************
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="50dp"
+    android:paddingBottom="50dp"
+    tools:context="com.sendbirthdaygreeting.app.SendBirthdayGreetingActivity"
+    android:background="#d5ffdc">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:id="@+id/textView"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="52dp"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:id="@+id/textView2"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendButtonId"
+        android:minWidth="250dp"
+        android:text="Send"
+        android:layout_below="@+id/tvSMS_Id"
+        android:layout_alignLeft="@+id/tvSMS_Id"
+        android:layout_alignStart="@+id/tvSMS_Id"
+        android:layout_marginTop="39dp"
+        android:onClick="sendBirthdayGreetingOnClick"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvName_Id"
+        android:hint="Contact's name"
+        android:minWidth="150dp"
+        android:layout_above="@+id/textView5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="28dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEmail_Id"
+        android:hint="Contact's email"
+        android:minWidth="150dp"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/tvBirthday_Id"
+        android:layout_alignStart="@+id/tvBirthday_Id"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPhone_Id"
+        android:hint="Contact's phone"
+        android:minWidth="150dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignLeft="@+id/tvEmail_Id"
+        android:layout_alignStart="@+id/tvEmail_Id"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone:"
+        android:id="@+id/textView3"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:text="Birthday Message:"
+        android:textSize="20dp"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSMS_Id"
+        android:hint="Birthday message"
+        android:minWidth="250dp"
+        android:singleLine="false"
+        android:minHeight="100dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthday: "
+        android:id="@+id/textView5"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvBirthday_Id"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignRight="@+id/tvName_Id"
+        android:layout_alignEnd="@+id/tvName_Id"
+        android:minWidth="150dp"
+        android:hint="Contact's Birthday"/>
+
+</RelativeLayout>

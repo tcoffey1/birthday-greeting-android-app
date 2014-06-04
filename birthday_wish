@@ -1,0 +1,20 @@
+//   Author:   Tadhg Coffey
+//   Date  :   5/19/14
+//   Homework assignment : Quiz 2
+//   File: birthday_wish from Send Birthday Greeting
+//   Objective : Read (2) text files: One with a birthday greeting 
+//             and the second containing the user's contacts with 
+//             birthday dates. Contacts are placed in a table.When 
+//             current date matches a date in the contacts table, 
+//             the user will be alerted and can choose to send a 
+//             birthday greeting to the contact.
+//****************************************************************
+
+
+A Simple celebration, a gathering of friends; here is wishing you great happiness,
+a joy that never ends.
+
+Happy Birthday dear XXX
+I wish you the best.
+
+

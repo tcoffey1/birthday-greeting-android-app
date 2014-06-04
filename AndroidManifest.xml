@@ -1,0 +1,45 @@
+<!-- Author:   Tadhg Coffey
+//   Date  :   5/19/14
+//   Homework assignment : Quiz 2
+//   File: AndroidManifest.xml from Send Birthday Greeting
+//   Objective : Read (2) text files: One with a birthday greeting 
+//             and the second containing the user's contacts with 
+//             birthday dates. Contacts are placed in a table.When 
+//             current date matches a date in the contacts table, 
+//             the user will be alerted and can choose to send a 
+//             birthday greeting to the contact.
+//****************************************************************
+-->
+
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sendbirthdaygreeting.app" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.sendbirthdaygreeting.app.SendBirthdayGreetingActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".MySMSMonitor">
+            <intent-filter>
+                <action
+                    android:name="android:provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+</manifest>
